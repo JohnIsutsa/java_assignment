@@ -1,3 +1,5 @@
+//Class to test various method implementations
+
 public class TryingMethods {
     public static void main(String[] args) {
 
@@ -9,8 +11,11 @@ public class TryingMethods {
         TryingMethods test2 = new TryingMethods();
         System.out.println(test2.randomFunction(2000));
 
-        //Tesing sumOneThousand method
+        //Testing sumOneThousand method
         System.out.println(sumOneThousand());
+
+        //Testing sumOfEven method
+        System.out.println(sumOfEven());
     }
 
     String dayOfTheWeek(int day){
@@ -59,6 +64,16 @@ public class TryingMethods {
         int sum = 0;
         for(int i = 1; i <= 1000; i++){
             sum += i;
+        }
+        return sum;
+    }
+
+    static int sumOfEven(){
+        int sum = 0;
+        for(int i = 12; i <=103; i++) {
+            if (i%2 == 0) {
+                sum += i;
+            }
         }
         return sum;
     }
