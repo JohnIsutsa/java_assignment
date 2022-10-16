@@ -1,6 +1,10 @@
 public class TryingMethods {
     public static void main(String[] args) {
-        
+
+        // Object to test dayOfTheWeek method
+        TryingMethods test1 = new TryingMethods();
+        System.out.println(test1.dayOfTheWeek(1));
+
     }
 
     String dayOfTheWeek(int day){
