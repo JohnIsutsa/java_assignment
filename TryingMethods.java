@@ -9,6 +9,8 @@ public class TryingMethods {
         TryingMethods test2 = new TryingMethods();
         System.out.println(test2.randomFunction(2000));
 
+        //Tesing sumOneThousand method
+        System.out.println(sumOneThousand());
     }
 
     String dayOfTheWeek(int day){
@@ -51,5 +53,13 @@ public class TryingMethods {
             message += "Just right";
         }
         return message;
+    }
+
+    static int sumOneThousand(){
+        int sum = 0;
+        for(int i = 1; i <= 1000; i++){
+            sum += i;
+        }
+        return sum;
     }
 }
