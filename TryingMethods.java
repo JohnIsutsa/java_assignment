@@ -7,7 +7,7 @@ public class TryingMethods {
 
         // Object to test randomFunction method 
         TryingMethods test2 = new TryingMethods();
-        System.out.println(test2.randomFunction(2000));
+        test2.randomFunction(2000);
 
         //Tesing sumOneThousand method
         System.out.println(sumOneThousand());
@@ -43,16 +43,14 @@ public class TryingMethods {
         return dayOfTheWeek;
     }
 
-    String randomFunction(int year){
-        String message = "";
+    void randomFunction(int year){
         if(year>2022){
-            message += "Too early";
+            System.out.println("Too early");
         } else if(year<2022){
-            message += "Too late";
+            System.out.println("Too late");
         } else if(year == 2022){
-            message += "Just right";
+            System.out.println("Just right");;
         }
-        return message;
     }
 
     static int sumOneThousand(){
