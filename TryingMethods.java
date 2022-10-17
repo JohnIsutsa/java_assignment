@@ -5,6 +5,10 @@ public class TryingMethods {
         TryingMethods test1 = new TryingMethods();
         System.out.println(test1.dayOfTheWeek(1));
 
+        // Object to test randomFunction method 
+        TryingMethods test2 = new TryingMethods();
+        System.out.println(test2.randomFunction(2000));
+
     }
 
     String dayOfTheWeek(int day){
@@ -35,5 +39,17 @@ public class TryingMethods {
                 break;
         }
         return dayOfTheWeek;
+    }
+
+    String randomFunction(int year){
+        String message = "";
+        if(year>2022){
+            message += "Too early";
+        } else if(year<2022){
+            message += "Too late";
+        } else if(year == 2022){
+            message += "Just right";
+        }
+        return message;
     }
 }
