@@ -59,9 +59,10 @@ public class TryingMethods {
     }
 
     static int sumOneThousand(){
-        int sum = 0;
-        for(int i = 1; i <= 1000; i++){
-            sum += i;
+        int sum = 0, i=1;
+        while(i<1000){
+            sum+=i;
+            i++;
         }
         return sum;
     }
